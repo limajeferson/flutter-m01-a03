@@ -4,19 +4,14 @@ import 'dart:math';
 
 void main() {
   // 1. Criar três variáveis para os lados de um triângulo
-  var a;
-  var b;
-  var c;
-
-  a = 5;
-  b = 12;
-  c = 13;
+  var a = 5;
+  var b = 12;
+  var c = 13;
 
   // 2. Utilizar o preceito de um triângulo para verificar se é válido
-  
+
   if ((a < (b + c)) && (b < (c + a)) && (c < (a + b))) {
-    
-  /* TAMBÉM FUNCIONA 
+    /* TAMBÉM FUNCIONA 
   var val;
 
   if (a < (b + c)) {
@@ -28,12 +23,11 @@ void main() {
   }
   */
 
-  // 3. Se o triângulo for válido
-  // 1. Exibir a mensagem "É um triângulo"
+    // 3. Se o triângulo for válido
+    // 1. Exibir a mensagem "É um triângulo"
     print('É um triângulo');
-  
-  // 2. Verificar classificação e exibir na tela
 
+    // 2. Verificar classificação e exibir na tela
 
     if (a == b && a == c) {
       print('Triângulo equilátero');
@@ -46,12 +40,9 @@ void main() {
     if (pow(a, 2) + pow(b, 2) == pow(c, 2)) {
       print('Triângulo retângulo');
     }
-
   } else {
     print('Não é possível formar um triângulo');
   }
-  
-  
 
   // 4. Se não for válido, exibir a mensagem "Não é possível formar um triângulo".
   // já incluso no item 3

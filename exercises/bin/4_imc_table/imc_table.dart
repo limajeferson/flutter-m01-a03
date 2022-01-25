@@ -1,16 +1,12 @@
 import 'dart:math';
+
 /// Tabela do IMC
 
 void main() {
   // 1. Calcular o IMC de uma pessoa
-  var imc;
-  var pes;
-  var alt;
-
-  pes = 88;
-  alt = 1.65;
-
-  imc = pes / pow(alt, 2);
+  var pes = 88;
+  var alt = 1.65;
+  var imc = pes / pow(alt, 2);
 
   // 2. Criar as condições para cada classificação
 
